@@ -152,7 +152,7 @@ class BattleViewController: UIViewController {
         if isPlayerMoveValueMax&&player.currentTP>=40{
             TechDraUtility.damageAnimation(imageView:enemyImageView)
             util.playSE(fileName: "SE_fire")
-            enemy.currentHP-=100
+            enemy.currentHP-=300
             enemyHPBar.setProgress(enemy.currentHP/enemy.maxHP, animated: true)
             
             player.currentTP-=40
